@@ -1,0 +1,2 @@
+# kafka-practicals
+Kafka Practicals
