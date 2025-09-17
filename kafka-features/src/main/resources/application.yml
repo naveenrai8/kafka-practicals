@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: kafka-features
+
+server:
+  port: 8080
+
+app:
+  kafka:
+    topic: my-topic-111
+    group-id: group-id
+
+  bootstrap_servers:
+    ip: localhost:9092
