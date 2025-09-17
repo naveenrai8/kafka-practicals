@@ -17,8 +17,8 @@ public class KafkaStringValueConsumer {
 
     @KafkaListener(
             topics = "${app.kafka.topic}",
-            groupId = "${app.kafka.group-id}"
-//            containerFactory = "kafkaStringValueConsumerFactory"
+            groupId = "${app.kafka.group-id}",
+            containerFactory = "kafkaStringValueListenerContainerFactory"
     )
     public void consumerHandler(String payload,
                                 @Header(KafkaHeaders.OFFSET) String offset) {
